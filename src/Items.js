@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const Items = (props) => {
   const { listItem, updateItem } = props;
   const handleDelete = (id) => {
