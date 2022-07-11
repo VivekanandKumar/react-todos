@@ -28,13 +28,13 @@ const TodoItem = (props) => {
             {item.text}
           </p>
         </span>
-        <button
+        <i
+          class="fa fa-times"
+          aria-hidden="true"
           onClick={() => {
             itemDelete(item.id);
           }}
-        >
-          X
-        </button>
+        />
       </div>
     );
   });

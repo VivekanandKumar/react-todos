@@ -19,11 +19,19 @@ const App = () => {
     <div className="main">
       <h1>Todo App</h1>
       <Todo Todos={Todos} setTodos={setTodos} />
-      <h3>Your Todo's</h3>
-      <hr />
-      <div className="todos-list">
-        <TodoItem Todos={Todos} setTodos={setTodos} />
-      </div>
+      {Todos.length < 1 ? (
+        <h4 style={{ color: "lightgray", textAlign: "center" }}>
+          Empty Todo List !!
+        </h4>
+      ) : (
+        <>
+          <h3>Your Todo's</h3>
+          <hr />
+          <div className="todos-list">
+            <TodoItem Todos={Todos} setTodos={setTodos} />
+          </div>
+        </>
+      )}
     </div>
   );
 };

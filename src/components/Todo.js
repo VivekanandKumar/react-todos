@@ -24,7 +24,7 @@ const Todo = (props) => {
         type="text"
         onChange={currentText}
         value={currentItem}
-        placeholder="Enter a Todo"
+        placeholder="Create a Todo"
       />
       <button type="submit">ADD</button>
     </form>
