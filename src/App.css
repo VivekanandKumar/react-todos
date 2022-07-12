@@ -101,7 +101,7 @@ form button {
   border-radius: 20px;
 }
 .todos-list::-webkit-scrollbar-thumb {
-  background: rgb(171, 69, 255);
+  background: #f2f2f2;
   border-radius: 20px;
 }
 .todos-list div .todo-item {
